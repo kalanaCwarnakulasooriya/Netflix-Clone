@@ -34,9 +34,6 @@ public class SecurityConfig {
                                 "/auth/**").permitAll()
                         .anyRequest().authenticated()
                 )
-                .oauth2Login(o -> o
-                        .defaultSuccessUrl("/oauth2/success", true)
-                )
                 .sessionManagement(session-> session
                         .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
                 .authenticationProvider(authenticationProvider())

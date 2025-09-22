@@ -26,35 +26,31 @@ public class MailSendServiceImpl implements MailSendService {
             margin: 0;
             padding: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+            background: #000000;
+            color: #ffffff;
           }
           .container {
             max-width: 650px;
             margin: 40px auto;
-            background-color: #ffffff;
-            border-radius: 15px;
+            background-color: #141414;
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-            border: 1px solid #e2e8f0;
-            animation: fadeIn 1s ease-in-out;
-          }
-          @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-10px); }
-            to { opacity: 1; transform: translateY(0); }
+            box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+            border: 1px solid #e50914;
           }
           .header {
-            background: linear-gradient(90deg, #4f46e5, #3b82f6);
+            background: #e50914;
             color: #fff;
             text-align: center;
             padding: 30px 20px;
-            font-size: 28px;
+            font-size: 26px;
             font-weight: 700;
             letter-spacing: 1px;
           }
           .content {
             padding: 35px 30px;
-            color: #1e293b;
             line-height: 1.7;
+            color: #e5e5e5;
           }
           .content p {
             margin-bottom: 18px;
@@ -63,60 +59,67 @@ public class MailSendServiceImpl implements MailSendService {
           .button {
             display: inline-block;
             padding: 14px 28px;
-            background: linear-gradient(90deg, #f43f5e, #e11d48);
+            background: #e50914;
             color: #fff !important;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 5px;
             font-weight: 600;
-            box-shadow: 0 5px 15px rgba(244,63,94,0.3);
+            box-shadow: 0 5px 15px rgba(229,9,20,0.5);
             transition: transform 0.2s ease, box-shadow 0.2s ease;
           }
           .button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(244,63,94,0.4);
+            box-shadow: 0 8px 20px rgba(229,9,20,0.7);
           }
           .alert-box {
             padding: 20px;
-            border-left: 5px solid #f43f5e;
-            background-color: #ffe4e6;
-            border-radius: 8px;
+            border-left: 5px solid #e50914;
+            background-color: #1f1f1f;
+            border-radius: 6px;
             margin: 25px 0;
+            color: #ffffff;
           }
           .footer {
-            padding: 25px;
+            padding: 20px;
             font-size: 13px;
-            color: #64748b;
+            color: #aaaaaa;
             text-align: center;
-            background-color: #f1f5f9;
+            background-color: #0a0a0a;
           }
           .footer a {
-            color: #3b82f6;
+            color: #e50914;
             text-decoration: none;
+          }
+          hr {
+            margin: 30px 0;
+            border: none;
+            border-top: 1px solid #333;
           }
           @media only screen and (max-width: 600px) {
             .content { padding: 25px 20px; }
-            .header { font-size: 24px; padding: 25px 15px; }
+            .header { font-size: 22px; padding: 25px 15px; }
             .button { padding: 12px 24px; font-size: 15px; }
           }
         </style>
       </head>
       <body>
         <div class="container">
-          <div class="header">Trip.com Login Alert</div>
+          <div class="header">Netflix Login Alert</div>
           <div class="content">
-            <p>Hello <strong>%s</strong>,</p>
+            <p>Hi <strong>%s</strong>,</p>
             <div class="alert-box">
-              <p>We noticed a new login to your Trip.com account.</p>
-              <p>If this was you, everything is safe. No action is needed.</p>
+              <p>We noticed a new login to your Netflix account.</p>
+              <p>If this was you, there’s nothing else you need to do.</p>
             </div>
-            <p>If you did NOT login, please secure your account immediately:</p>
-            <a href="" class="button">Secure Your Account</a>
-            <hr style="margin: 30px 0; border: none; border-top: 1px solid #e2e8f0;">
-            <p>Thank you for choosing Trip.com. We’re excited to help you explore the world!</p>
+            <p>If you did <strong>NOT</strong> log in, we strongly recommend securing your account now:</p>
+            <a href="https://www.netflix.com/LoginHelp" class="button">Secure Your Account</a>
+            <hr>
+            <p>Enjoy watching the latest movies and TV shows anytime, anywhere.<br>
+            Stay safe, stay entertained 🎬🍿</p>
           </div>
           <div class="footer">
-            &copy; %s Trip.com | All rights reserved | 
-            <a href="">Privacy Policy</a>
+            &copy; %s Netflix | All rights reserved | 
+            <a href="https://www.netflix.com/privacy">Privacy Policy</a>
           </div>
         </div>
       </body>
@@ -136,24 +139,20 @@ public class MailSendServiceImpl implements MailSendService {
             margin: 0;
             padding: 0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #f0f4f8, #d9e2ec);
+            background: #000000;
+            color: #ffffff;
           }
           .container {
             max-width: 650px;
             margin: 40px auto;
-            background-color: #ffffff;
-            border-radius: 15px;
+            background-color: #141414;
+            border-radius: 12px;
             overflow: hidden;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.08);
-            border: 1px solid #e2e8f0;
-            animation: fadeIn 1s ease-in-out;
-          }
-          @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(-10px); }
-            to { opacity: 1; transform: translateY(0); }
+            box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+            border: 1px solid #e50914;
           }
           .header {
-            background: linear-gradient(90deg, #4f46e5, #3b82f6);
+            background: #e50914;
             color: #fff;
             text-align: center;
             padding: 30px 20px;
@@ -163,8 +162,8 @@ public class MailSendServiceImpl implements MailSendService {
           }
           .content {
             padding: 35px 30px;
-            color: #1e293b;
             line-height: 1.7;
+            color: #e5e5e5;
           }
           .content p {
             margin-bottom: 18px;
@@ -173,34 +172,35 @@ public class MailSendServiceImpl implements MailSendService {
           .button {
             display: inline-block;
             padding: 14px 28px;
-            background: linear-gradient(90deg, #f43f5e, #e11d48);
+            background: #e50914;
             color: #fff !important;
             text-decoration: none;
-            border-radius: 8px;
+            border-radius: 5px;
             font-weight: 600;
-            box-shadow: 0 5px 15px rgba(244,63,94,0.3);
+            box-shadow: 0 5px 15px rgba(229,9,20,0.5);
             transition: transform 0.2s ease, box-shadow 0.2s ease;
           }
           .button:hover {
             transform: translateY(-2px);
-            box-shadow: 0 8px 20px rgba(244,63,94,0.4);
+            box-shadow: 0 8px 20px rgba(229,9,20,0.7);
           }
           .alert-box {
             padding: 20px;
-            border-left: 5px solid #f43f5e;
-            background-color: #ffe4e6;
-            border-radius: 8px;
+            border-left: 5px solid #e50914;
+            background-color: #1f1f1f;
+            border-radius: 6px;
             margin: 25px 0;
+            color: #ffffff;
           }
           .footer {
-            padding: 25px;
+            padding: 20px;
             font-size: 13px;
-            color: #64748b;
+            color: #aaaaaa;
             text-align: center;
-            background-color: #f1f5f9;
+            background-color: #0a0a0a;
           }
           .footer a {
-            color: #3b82f6;
+            color: #e50914;
             text-decoration: none;
           }
           @media only screen and (max-width: 600px) {
@@ -212,19 +212,22 @@ public class MailSendServiceImpl implements MailSendService {
       </head>
       <body>
         <div class="container">
-          <div class="header">Welcome to Trip.com!</div>
+          <div class="header">Welcome to Netflix</div>
           <div class="content">
             <p>Hi <strong>%s</strong>,</p>
-            <p>Thank you for registering with Trip.com. Your account has been successfully created.</p>
+            <p>Your Netflix journey begins now! 🎬<br>
+            You can explore unlimited movies, TV shows, and exclusive originals right away.</p>
+            
             <div class="alert-box">
-              <p><strong>Registration Date & Time:</strong> %s</p>
+              <p><strong>Account Created On:</strong> %s</p>
             </div>
-            <p>Start exploring amazing trips and deals with us!</p>
-            <a href="" class="button">Visit Trip.com</a>
+            
+            <p>Grab your popcorn and start streaming the stories you love.</p>
+            <a href="https://www.netflix.com" class="button">Start Watching</a>
           </div>
           <div class="footer">
-            &copy; %s Trip.com | All rights reserved | 
-            <a href="">Privacy Policy</a>
+            &copy; %s Netflix | All rights reserved | 
+            <a href="https://www.netflix.com/privacy">Privacy Policy</a>
           </div>
         </div>
       </body>
